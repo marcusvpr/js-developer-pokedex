@@ -20,6 +20,7 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/pokeDet.css">
 </head>
 
 <body>
@@ -37,13 +38,25 @@
         </div>
     </section>
 
-    <div id="pokeModal" class="modal">
-        <div class='pokeCenter'>
-            <div id="pokeModalIn" class="pokeModalIn">
-                <div id="pokeListDet" class="pokeModal">
-                    <!-- Poke Details here -->
-                </div>
+    <!-- POKEMON DETAILS -->
+    <div id="modal-overlay">
+        <div id="modal">
+            <div>
+                <h2></h2>
+                <ol class="types"></ol>
+                
+                <span id="number"></span>
             </div>
+            <img src="" alt="">
+            <div class="details">
+                <span id="species"></span>
+                <span id="height"></span>
+                <span id="weight"></span>
+                <span id="abilities">Abilities: </span>
+            </div>
+            <button type="button" onclick="modalToggle()">
+                <img src="assets/image/arrow.svg" alt="back" />
+            </button>
         </div>
     </div>
     
